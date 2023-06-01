@@ -3,6 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import instaIcon from "../assets/insta-icon-small.png";
 import githubIcon from "../assets/github-icon-small.png";
 import linkedInIcon from "../assets/linkedin-icon-small.png";
+import logo from "../assets/logo.png"
 
 const NavBar = () => {
   const [activePage, setActivePage] = useState("home"); //state to manage which page you are currently scrolled on
@@ -33,7 +34,7 @@ const NavBar = () => {
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={""} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
