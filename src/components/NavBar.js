@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import instaIcon from "../assets/insta-icon-small.png"
+import githubIcon from "../assets/github-icon-small.png"
+import linkedInIcon from "../assets/linkedin-icon-small.png"
 
 const NavBar = () => {
   return (
@@ -23,6 +25,8 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icons">
+                <a href="https://github.com/arooj-ilyas"><img src={githubIcon} alt="insta-icon" /></a>
+                <a href="https://www.linkedin.com/in/arooj-ilyas/"><img src={linkedInIcon} alt="insta-icon" /></a>
                 <a href="https://www.instagram.com/coder.oo/"><img src={instaIcon} alt="insta-icon" /></a>
             </div>
           </span>
