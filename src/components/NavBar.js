@@ -78,8 +78,8 @@ const NavBar = () => {
               </a>
             </div>
 
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Get in touch!</span>
+            <button onClick={() => console.log("connect")}>
+              <span>Contact Me</span>
             </button>
 
           </span>

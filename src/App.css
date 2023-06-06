@@ -122,3 +122,16 @@ span.navbar-text {
 .social-icons a:hover img {
 	transform:scale(1.2,1.2);
 }
+
+.navbar-text button {
+  font-weight: 700;
+  color: #730072;
+  border: 1px solid #730072;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
