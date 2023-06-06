@@ -69,18 +69,20 @@ const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icons">
               <a href="https://github.com/arooj-ilyas">
-                <img src={githubIcon} alt="insta-icon" />
+                <img src={githubIcon} alt="github-icon" />
               </a>
               <a href="https://www.linkedin.com/in/arooj-ilyas/">
-                <img src={linkedInIcon} alt="insta-icon" />
+                <img src={linkedInIcon} alt="linkedin-icon" />
               </a>
               <a href="https://www.instagram.com/coder.oo/">
                 <img src={instaIcon} alt="insta-icon" />
               </a>
-              <button onClick={() => console.log("connect")}>
-                <img src={emailIcon} alt="email-icon" />
-              </button>
             </div>
+
+            <button className="vvd" onClick={() => console.log("connect")}>
+              <span>Get in touch!</span>
+            </button>
+
           </span>
 
         </Navbar.Collapse>
