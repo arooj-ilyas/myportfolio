@@ -103,17 +103,6 @@ span.navbar-text {
     border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-.social-icons a::before {
-    content: "";
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 100%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
-}
-
 .social-icons a img {
 	width: 100%;
 	z-index: 1;
@@ -128,10 +117,18 @@ span.navbar-text {
   color: #730072;
   border: 1px solid #730072;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 18px;
-  margin-left: 18px;
+  margin-left: 6px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+}
+
+.navbar-text button:hover {
+  color: #fff;
+  border: 1px solid #730072;
+  background-color: #730072;
+  border-radius: 20px;
+  
 }
