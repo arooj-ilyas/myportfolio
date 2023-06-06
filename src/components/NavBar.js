@@ -77,10 +77,10 @@ const NavBar = () => {
               <a href="https://www.instagram.com/coder.oo/">
                 <img src={instaIcon} alt="insta-icon" />
               </a>
+              <button onClick={() => console.log("connect")}>
+                <img src={emailIcon} alt="email-icon" />
+              </button>
             </div>
-            <button className="connectbutton" onClick={() => console.log("connect")}>
-              <img src={emailIcon} alt="email-icon" />
-            </button>
           </span>
 
         </Navbar.Collapse>
