@@ -3,7 +3,6 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import instaIcon from "../assets/insta-icon-small.png";
 import githubIcon from "../assets/github-icon-small.png";
 import linkedInIcon from "../assets/linkedin-icon-small.png";
-import emailIcon from "../assets/email-icon.png"
 import logo from "../assets/logo.png"
 
 const NavBar = () => {
