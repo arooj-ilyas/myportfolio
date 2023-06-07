@@ -51,12 +51,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /******* Navbar CSS *******/
 nav.navbar {
-  padding: 10px 0;
+  padding: 18px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition:  0.3s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -79,8 +79,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    text-underline-position: below;
-    text-decoration: underline;
+    transform:scale(1.2,1.2);
+    transition: 0.3s ease-in-out
 }
 
 span.navbar-text {
@@ -130,5 +130,47 @@ span.navbar-text {
   border: 1px solid #730072;
   background-color: #730072;
   border-radius: 20px;
-  
 }
+
+/* nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: 10px;
+    box-shadow: none;
+} */
+
+/* line 1 of burger icon
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #730072;;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+
+line 2 of burger icon
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #730072;;
+  transition: all 300ms linear;
+}
+
+line 3 of burger icon
+nav.navbar .navbar-toggler-icon:after {
+  width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #730072;;
+	top: 8px;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+} */
+

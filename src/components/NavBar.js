@@ -37,7 +37,7 @@ const NavBar = () => {
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggle-icon">≡</span>
+          <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -79,7 +79,7 @@ const NavBar = () => {
             </div>
 
             <button onClick={() => console.log("connect")}>
-              <span>Contact Me</span>
+              <span>contact me</span>
             </button>
 
           </span>
