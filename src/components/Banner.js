@@ -9,10 +9,12 @@ const Banner = () => {
             <Row className="align-items-center">
                 <Col xs={12} md={6} xl={7}>
                     <span className="tagline">welcome to my portfolio</span>
-                    <h1>{`hi 👋🏽`}</h1>
+                    <h1>{`hi 👋🏽`}
+                    </h1>
                     <a href="#!">
                         <img src={nameImage} alt="name-badge" />
                     </a>
+                    <button onClick={()=> console.log('connect')}>Let's connect</button>
                 </Col>
             </Row>
         </Container>
