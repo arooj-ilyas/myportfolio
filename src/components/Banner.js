@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Row, Container, Col } from "react-bootstrap";
-import nameImage from "../assets/name-h1-portfolio.png";
+import nameImage from "../assets/big-title-name.png";
 import pixelArooj from "../assets/pixel-arooj.png";
 
 const Banner = () => {

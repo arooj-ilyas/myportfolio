@@ -31,7 +31,7 @@ const NavBar = () => {
   }
 
   return (
-    <Navbar bg="light" expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar bg="light" expand="lg" className={scrolled ? "scrolled custom-navbar" : "custom-navbar"}>
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" />
