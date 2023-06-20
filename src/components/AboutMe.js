@@ -11,13 +11,13 @@ const AboutMe = () => {
     const toRotate = ["FULL STACK WEB DEVELOPER", "FRONT END DEVELOPER", "JUNIOR SOFTWARE ENGINEER", "MECHANICAL/MANUFACTURING ENGINEER", "SOLITARE SLAYER"]
     const [text, setText] = useState(''); //indicate the portion of the text being displayed
     const [timeToTypeText, setTimeToTypeText] = useState(200) //indicates time passing between each letter being typed
-    const period = 1000 //indicates time passing between each word is 'typed'
+    const timeBetweenWord = 1000 //indicates time passing between each word is 'typed'
 
   //this will run the function that is responsible for taking care of the 'typing' 'deleting' animation
   useEffect(()=> {
     let ticker = setInterval(()=> {
         tick()
-    }, [timeToTypeText])
+    }, timeToTypeText)
 
     return() => { clearInterval(ticker)} //want to clear the state after it has been typed
   }, [text])
@@ -25,17 +25,21 @@ const AboutMe = () => {
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i]
-    let updatedText= isDeleting ? fullText.substring(0, text.length -1) : fullText.substring(0, text.length +1)
-
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+ 
     setText(updatedText);
 
     if (isDeleting) {
       setTimeToTypeText(prevTimeToType => prevTimeToType /2)
       }
+
+    // the point at which the full word has been typed out
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true)
-      setTimeToTypeText(period)
+      setTimeToTypeText(timeBetweenWord) //set time back to its normal pace, for deleting it is quicker and for typing we want it slower
       } 
+    
+    // the point at which the word is fully deleted and the next item in the toRotate array can be typed
     else if (isDeleting && updatedText === "") {
         setIsDeleting(false)
         setLoopNum(loopNum + 1)
