@@ -206,7 +206,7 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 
 .aboutme .description {
-  margin-top: 50px; /* Adjust the margin-top value as needed */
+  margin-top: 20px; /* Adjust the margin-top value as needed */
 }
 
 /* Media Queries for responsiveness */
@@ -221,7 +221,7 @@ nav.custom-navbar .navbar-toggler-icon {
     margin-bottom: 16px; /* Add margin at the bottom of the h1 */
   }
 
-  .aboutme img {
+  .aboutme .profilepicture {
     margin-top: 16px; /* Add margin at the top of the image */
   }
 }
@@ -238,7 +238,7 @@ nav.custom-navbar .navbar-toggler-icon {
     padding-left: 10px
   }
 
-  .aboutme img {
+  .aboutme .profilepicture {
     margin-top: 16px; /* Add margin at the top of the image */
     display: block; 
     margin-left: auto; 
@@ -247,7 +247,7 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 
 
-.aboutme img {
+.aboutme .profilepicture {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -263,4 +263,15 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
