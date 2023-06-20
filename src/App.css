@@ -159,9 +159,12 @@ nav.custom-navbar .navbar-toggler-icon {
 /************ Banner Css ************/
 .aboutme {
   margin-top: 0;
-  padding: 200px 0 0 50px;
+  padding: 200px 0 0 0;
   background-color: white;
+  display: flex; 
+  align-items: center;
 }
+
 .aboutme .tagline {
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -173,7 +176,7 @@ nav.custom-navbar .navbar-toggler-icon {
   font-family: Poppins, sans-serif !important;
   margin-bottom: 16px;
   display: inline-block;
-  color: white
+  color: white;
 }
 
 .aboutme h1 {
@@ -190,6 +193,44 @@ nav.custom-navbar .navbar-toggler-icon {
   background-clip: text;
   border: 1px;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .aboutme .tagline {
+    font-size: 16px;
+    margin-bottom: 8px; /* Add margin at the bottom of the tagline */
+  }
+
+  .aboutme h1 {
+    font-size: 40px;
+    margin-bottom: 16px; /* Add margin at the bottom of the h1 */
+  }
+
+  .aboutme img {
+    margin-top: 16px; /* Add margin at the top of the image */
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutme .tagline {
+    font-size: 14px;
+    margin-bottom: 8px; /* Add margin at the bottom of the tagline */
+  }
+
+  .aboutme h1 {
+    font-size: 32px;
+    margin-bottom: 16px; /* Add margin at the bottom of the h1 */
+    padding-left: 10px
+  }
+
+  .aboutme img {
+    margin-top: 16px; /* Add margin at the top of the image */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+}
+
 
 .aboutme img {
   animation: updown 3s linear infinite;

@@ -5,18 +5,18 @@ import profilePicArooj from "../assets/profile-pic.png"
 
 const AboutMe = () => {
     //create a variable to hold the phrases I want it to rotate through, and a state to hold which word it is currently displaying, and a 'delete' state which will backspace to remove the current word and display the next
-    const [loopNum, setLoopNum] = useState(0)
+    const [loopNum, setLoopNum] = useState(0) //which word is currently displayed in the toRotate array
     const [isDeleting, setIsDeleting] = useState(false) //set to false as we start by typing the word
-    const toRotate = ["FULL STACK WEB DEVELOPER", "FRONT END DEVELOPER", "JUNIOR SOFTWARE ENGINEER", "MANUFACTURING & MECHANICAL ENGINEER", "SOLITARE SLAYER"]
+    const toRotate = ["FULL STACK WEB DEVELOPER", "FRONT END DEVELOPER", "JUNIOR SOFTWARE ENGINEER", "MECHANICAL & MANUFACTURING ENGINEER", "SOLITARE SLAYER"]
     const [text, setText] = useState(''); //indicate the portion of the text being displayed
     const [timeToTypeText, setTimeToTypeText] = useState(200) //indicates time passing between each letter being typed
-    const period = 500 //indicates time passing between each word is 'typed'
+    const period = 1000 //indicates time passing between each word is 'typed'
 
   //this will run the function that is responsible for taking care of the 'typing' 'deleting' animation
   useEffect(()=> {
     let ticker = setInterval(()=> {
         tick()
-    }, timeToTypeText)
+    }, [timeToTypeText])
 
     return() => { clearInterval(ticker)} //want to clear the state after it has been typed
   }, [text])
@@ -29,16 +29,16 @@ const AboutMe = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setTimeToTypeText(prevTimeToType => prevTimeToType /1.5)
-    }
-
+      setTimeToTypeText(prevTimeToType => prevTimeToType /2)
+      }
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true)
       setTimeToTypeText(period)
-    } else if (isDeleting ** updatedText === "") {
+      } 
+    else if (isDeleting && updatedText === "") {
         setIsDeleting(false)
         setLoopNum(loopNum + 1)
-        setTimeToTypeText(500)
+        setTimeToTypeText(200)
       }
     }
 
