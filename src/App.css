@@ -186,7 +186,7 @@ nav.custom-navbar .navbar-toggler-icon {
   font-size: 70px;
   line-height: 110%;
   letter-spacing: 4px;
-  margin-top: 16px;
+  margin-top: 10px;
   background: linear-gradient(91.44deg, #730072 -0.27%, rgba(194, 120, 102, 0.58) 32.69%, #FFD45E 77.87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -194,6 +194,19 @@ nav.custom-navbar .navbar-toggler-icon {
   border: 1px;
   word-break: break-word;
 
+}
+
+.aboutme p {
+  color: #B8B8B8;
+  top: 40px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 150%;
+  width: 96%;
+}
+
+.aboutme .description {
+  margin-top: 50px; /* Adjust the margin-top value as needed */
 }
 
 /* Media Queries for responsiveness */
