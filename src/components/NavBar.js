@@ -49,6 +49,13 @@ const NavBar = () => {
               home
             </Nav.Link>
             <Nav.Link
+              href="#aboutme"
+              className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
+              onClick={() => updateActivePage()}
+            >
+              about me
+            </Nav.Link>
+            <Nav.Link
               href="#skills"
               className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
               onClick={() => updateActivePage()}

@@ -5,20 +5,6 @@
   font-weight: 700;
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url('https://fonts.googleapis.com/css2?family=Poppins');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Poppins;
-  src: url('https://fonts.googleapis.com/css2?family=Poppins');
-  font-weight: 300;
-}
-
-
-
 
 /******* Default CSS *******/
 * {
@@ -171,31 +157,54 @@ nav.custom-navbar .navbar-toggler-icon {
 
 
 /************ Banner Css ************/
-.banner {
+.aboutme {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 0 0 50px;
   background-color: white;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
+.aboutme .tagline {
+  font-weight: 600;
+  letter-spacing: 1.5px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  line-height: 100%;
+  background: linear-gradient(270deg, #9C428A 0%, rgba(194, 120, 102, 0.58) 55.05%, #FFD45E 100%);
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
   font-size: 20px;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: Poppins, sans-serif !important;
   margin-bottom: 16px;
   display: inline-block;
+  color: white
 }
-.banner h1 {
+
+.aboutme h1 {
   font-size: 65px;
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
+  font-family: Poppins, sans-serif !important;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 110%;
+  letter-spacing: 4px;
+  margin-top: 16px;
+  background: linear-gradient(91.44deg, #730072 -0.27%, rgba(194, 120, 102, 0.58) 32.69%, #FFD45E 77.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px;
+}
+
+.aboutme img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
 }
