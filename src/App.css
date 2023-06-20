@@ -192,6 +192,8 @@ nav.custom-navbar .navbar-toggler-icon {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   border: 1px;
+  word-break: break-word;
+
 }
 
 /* Media Queries for responsiveness */
