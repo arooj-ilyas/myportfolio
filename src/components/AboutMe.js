@@ -79,3 +79,11 @@ export default AboutMe;
 //               Let's connect
 //               <ArrowRightCircle size={25} />
 //             </button>
+
+
+/* <div className="button-overlay">
+          <button onClick={() => console.log("connect")}>
+            Let's connect
+            <ArrowRightCircle size={25} />
+          </button>
+        </div> */
