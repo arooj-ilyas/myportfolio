@@ -53,7 +53,6 @@ const AboutMe = () => {
         <div className="heading-container">
           <img className="heading" src={aboutMeHeading} alt="AboutMeHeading" />
         </div>
-        <span className="tagline">welcome to my portfolio</span>
         <Row className="align-items-start" xs={12} md={6} xl={7}>
           <Col xs={12} md={6} xl={7}>
             <h1>{`HI! I'M A... `}</h1>
