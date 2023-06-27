@@ -63,7 +63,7 @@ const AboutMe = () => {
           </Col>
         </Row>
         <span>
-          <p className="description">Lorum Ipsum is simply dummy text of the printing and typesetting industry</p>
+          <p className="description">Lorum Ipsum is simply dummy text of the printing and typesetting industry, replace this with about me section</p>
         </span>
       </Container>
     </section>
