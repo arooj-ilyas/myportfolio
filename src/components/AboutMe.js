@@ -55,7 +55,7 @@ const AboutMe = () => {
         </div>
         <Row className="align-items-start" xs={12} md={6} xl={7}>
           <Col xs={12} md={6} xl={7}>
-            <h1>{`HI! I'M A... `}</h1>
+            <h1>{`HI! I AM A... `}</h1>
             <h1><span className="wrap">{text}</span></h1>
           </Col>
           <Col xs={12} md={6} xl={5}>
