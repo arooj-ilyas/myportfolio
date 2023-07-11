@@ -277,10 +277,10 @@ nav.custom-navbar .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
+  width: 100%; 
   position: relative;
 }
-
 
 .tagline {
   -webkit-border-radius: 60px;
@@ -320,4 +320,20 @@ nav.custom-navbar .navbar-toggler-icon {
   justify-content: center;
   text-align: center;
   padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust button size for screens smaller than or equal to 768px */
+  .tagline {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust button size for screens smaller than or equal to 768px */
+  .tagline {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
 }

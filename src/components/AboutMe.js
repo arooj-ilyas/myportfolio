@@ -9,7 +9,7 @@ const AboutMe = () => {
     const [loopNum, setLoopNum] = useState(0) //which word is currently displayed in the toRotate array
     const [isDeleting, setIsDeleting] = useState(false) //set to false as we start by typing the word
     const toRotate = ["FULL STACK WEB DEVELOPER", "FRONT END DEVELOPER", "JUNIOR SOFTWARE ENGINEER", "MECHANICAL/MANUFACTURING ENGINEER", "SOLITARE SLAYER"]
-    const [text, setText] = useState(''); //indicate the portion of the text being displayed
+    const [text, setText] = useState(' '); //indicate the portion of the text being displayed
     const [timeToTypeText, setTimeToTypeText] = useState(200) //indicates time passing between each letter being typed
     const timeBetweenWord = 1000 //indicates time passing between each word is 'typed'
 
