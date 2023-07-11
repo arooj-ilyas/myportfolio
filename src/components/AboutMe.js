@@ -51,7 +51,7 @@ const AboutMe = () => {
     <section className="aboutme" id="aboutme">
       <Container>
         <div className="heading-container">
-          <img className="heading" src={aboutMeHeading} alt="AboutMeHeading" />
+          <img src={aboutMeHeading} alt="AboutMeHeading" />
         </div>
         <Row className="align-items-start" xs={12} md={6} xl={7}>
           <Col xs={12} md={6} xl={7}>
