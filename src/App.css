@@ -337,3 +337,14 @@ nav.custom-navbar .navbar-toggler-icon {
     padding: 6px 16px;
   }
 }
+
+
+
+/************ Skills Page Css ************/
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 150px
+}
