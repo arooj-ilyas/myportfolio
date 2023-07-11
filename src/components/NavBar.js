@@ -30,6 +30,10 @@ const NavBar = () => {
     setActivePage(value)
   }
 
+  const handleNavCollapse = () => {
+    document.querySelector(".navbar-toggler").click();
+  };
+
   return (
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled custom-navbar" : "custom-navbar"}>
       <Container>
@@ -44,28 +48,28 @@ const NavBar = () => {
             <Nav.Link
               href="#home"
               className={ activePage === "home" ? "current navbar-link" : "navbar-link"}
-              onClick={() => updateActivePage()}
+              onClick={() => {updateActivePage(); handleNavCollapse()}}
             >
               home
             </Nav.Link>
             <Nav.Link
               href="#aboutme"
               className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
-              onClick={() => updateActivePage()}
+              onClick={() => {updateActivePage(); handleNavCollapse()}}
             >
               about me
             </Nav.Link>
             <Nav.Link
               href="#skills"
               className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
-              onClick={() => updateActivePage()}
+              onClick={() => {updateActivePage(); handleNavCollapse()}}
             >
               skills
             </Nav.Link>
             <Nav.Link
               href="#projects"
               className={activePage === "project" ? "current navbar-link" : "navbar-link" }
-              onClick={() => updateActivePage()}
+              onClick={() => {updateActivePage(); handleNavCollapse()}}
             >
               projects
             </Nav.Link>

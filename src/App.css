@@ -39,6 +39,7 @@ img {
   height: auto;
 }
 
+
 /******* Navbar CSS *******/
 nav.navbar {
   padding: 18px 0;
@@ -365,7 +366,7 @@ nav.custom-navbar .navbar-toggler-icon {
   align-items: center;
   width: 70%;
   height: auto; 
-  margin: 50px auto 600px;
+  margin: 50px auto;
 }
 
 .skills-purple-container img {
