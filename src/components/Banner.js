@@ -8,15 +8,9 @@ const Banner = () => {
    <section className="banner" id="home">
    <Row>
         <img src={landingPageImage} alt="NameAndProfession" />
-        <div className="welcome-image">
-             <span className="tagline">welcome to my portfolio</span>
+        <div className="tagline-container">
+             <button type="submit" className="tagline">welcome to my portfolio</button>
         </div>
-
-        <div class="scroll-down-dude">
-            <span class="arrow-before"></span>
-            <span class="arrow-after"></span>
-        </div>
-
    </Row>
    </section>
   )
