@@ -40,7 +40,7 @@ const Projects = () => {
             <img src={rubADubGraphic} alt="project-graphic"/>
             <h3>Rub-a-Dub - Developer Hub</h3>
             <a href="https://github.com/arooj-ilyas/SOCProjectWeek_RubADub">
-            <p>Link to GitHub Repo</p>
+              <p>Link to github repo</p>
             </a>  
           
           </div>
@@ -49,7 +49,10 @@ const Projects = () => {
             <img src={spoilerAlertGraphic} alt="project-graphic"/>
             <h3>SpoilerAlert!</h3>
             <a href="https://expo.dev/@fat_arrow_faction/SpoilerAlert?serviceType=classic&distribution=expo-go">
-            <p>Link to ExpoGo Download - Android ONLY</p>
+              <p>Link to ExpoGo download - Android ONLY</p>
+            </a>
+            <a href="https://github.com/arooj-ilyas/SOCProjectMonth_SpoilerAlertFrontend">
+              <p>Link to github repo</p>
             </a>
           </div>
           
@@ -57,7 +60,10 @@ const Projects = () => {
             <img src={modernBankAppGraphic} alt="project-graphic"/>
             <h3>Modern Bank App</h3>
             <a href="modern-bank-app-inky.vercel.app">
-            <p>Link to deployed site</p>
+              <p>Link to deployed site</p>
+            </a>
+            <a href="https://github.com/arooj-ilyas/vite-react-tailwind-project">
+              <p>Link to github repo</p>
             </a>
           </div>
 
