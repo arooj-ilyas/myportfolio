@@ -39,19 +39,26 @@ const Projects = () => {
           <div className="item">
             <img src={rubADubGraphic} alt="project-graphic"/>
             <h3>Rub-a-Dub - Developer Hub</h3>
-            <p>Project brief</p>
+            <a href="https://github.com/arooj-ilyas/SOCProjectWeek_RubADub">
+            <p>Link to GitHub Repo</p>
+            </a>  
+          
           </div>
           
           <div className="item">
             <img src={spoilerAlertGraphic} alt="project-graphic"/>
             <h3>SpoilerAlert!</h3>
-            <p>Project brief</p>
+            <a href="https://expo.dev/@fat_arrow_faction/SpoilerAlert?serviceType=classic&distribution=expo-go">
+            <p>Link to ExpoGo Download - Android ONLY</p>
+            </a>
           </div>
           
           <div className="item">
             <img src={modernBankAppGraphic} alt="project-graphic"/>
             <h3>Modern Bank App</h3>
-            <p>Project brief</p>
+            <a href="modern-bank-app-inky.vercel.app">
+            <p>Link to deployed site</p>
+            </a>
           </div>
 
         </Carousel>

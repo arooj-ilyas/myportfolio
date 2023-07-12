@@ -280,8 +280,9 @@ nav.custom-navbar .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 95%;
+  max-width: 90%;
   height: auto;
+  margin: 0 auto;
 }
 
 
