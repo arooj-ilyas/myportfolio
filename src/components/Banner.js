@@ -1,17 +1,19 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
+import { Row, Container } from 'react-bootstrap'
 import landingPageImage from "../assets/homepage-picture.png"
 
 
 const Banner = () => {
   return (
    <section className="banner" id="home">
+   <Container>
    <Row>
+        <div className="home-page-container">
         <img src={landingPageImage} alt="NameAndProfession" />
-        <div className="tagline-container">
-             <button type="submit" className="tagline">welcome to my portfolio</button>
+             <button type="submit" className="purple-tagline-button">welcome to my portfolio</button>
         </div>
    </Row>
+   </Container>
    </section>
   )
 }
