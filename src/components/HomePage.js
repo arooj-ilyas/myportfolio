@@ -1,15 +1,18 @@
-import React from 'react'
-import { Row, Container } from 'react-bootstrap'
-import landingPageImage from "../assets/homepage-picture.png"
-
+import React from "react";
+import { Row, Container } from "react-bootstrap";
+import landingPageImage from "../assets/homepage-picture.png";
 
 const HomePage = () => {
-   return (
+  return (
     <section className="banner" id="home">
       <Container>
         <Row>
           <div className="home-page-container">
-            <img src={landingPageImage} alt="NameAndProfession" className="img-fluid" />
+            <img
+              src={landingPageImage}
+              alt="NameAndProfession"
+              className="img-fluid"
+            />
           </div>
           <div class="ocean">
             <div class="wave"></div>
@@ -22,7 +25,4 @@ const HomePage = () => {
   );
 };
 
-
-export default HomePage
-
-
+export default HomePage;
