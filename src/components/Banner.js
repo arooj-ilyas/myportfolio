@@ -10,7 +10,6 @@ const Banner = () => {
    <Row>
         <div className="home-page-container">
         <img src={landingPageImage} alt="NameAndProfession" />
-             <button type="submit" className="purple-tagline-button">welcome to my portfolio</button>
         </div>
    </Row>
    </Container>

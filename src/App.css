@@ -65,13 +65,14 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.5;
+  transition: none;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    transform:scale(1.2,1.2);
-    transition: 0.3s ease-in-out
+    transition: 0.3s ease-in-out;
+    transform: none;
 }
 
 span.navbar-text {
@@ -140,7 +141,7 @@ nav.custom-navbar .navbar-toggler-icon:before {
   left: 0;
   content: '';
   z-index: 2;
-  transition: all 300ms linear;
+  transition: none;
 }
 nav.custom-navbar .navbar-toggler-icon:after {
   top: 8px;
@@ -153,7 +154,7 @@ nav.custom-navbar .navbar-toggler-icon {
   background-image: none;
   position: relative;
   border-bottom: 2px solid #9C428A;
-  transition: all 300ms linear;
+  transition: none;
   top: -2px;
 }
 
@@ -285,21 +286,6 @@ nav.custom-navbar .navbar-toggler-icon {
   margin: 0 auto;
 }
 
-
-.purple-tagline-button {
-  -webkit-border-radius: 60px;
-  border-radius: 60px;
-  border: none;
-  color: #eeeeee;
-  display: inline-block;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0 auto;
-  max-width: 50%;
-  padding: 5px 15px;
-}
 
 @keyframes glowing {
   0% {
