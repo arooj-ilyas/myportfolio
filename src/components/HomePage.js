@@ -15,9 +15,9 @@ const HomePage = () => {
             />
           </div>
           <div class="ocean">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
           </div>
         </Row>
       </Container>

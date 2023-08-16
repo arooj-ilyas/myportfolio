@@ -29,7 +29,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects">
+    <section className="page-container" id="projects">
       <Container>
         <div className="heading-container">
           <img src={projectsHeading} alt="ProjectsHeading" />

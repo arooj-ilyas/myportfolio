@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar.js';
 import AboutMe from './components/AboutMe'
 import HomePage from './components/HomePage';
-import SkillsContainer from './components/SkillsContainer';
+import Skills from './components/Skills'
 import Projects from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -14,7 +14,7 @@ function App() {
     <HomePage />
     <AboutMe />
     <Projects />
-    <SkillsContainer />
+    <Skills />
   </div>
   );
 }

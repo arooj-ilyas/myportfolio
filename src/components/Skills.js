@@ -5,10 +5,10 @@ import purpleSkillsContainer from "../assets/purple-skills-container.png"
 import { Container } from 'react-bootstrap'
 
 
-const SkillsContainer = () => {
+const Skills= () => {
 
   return (
-    <section id="skills">
+    <section className="page-container" id="skills">
     <Container>
 
       <div className="heading-container">
@@ -23,4 +23,4 @@ const SkillsContainer = () => {
   )
 }
 
-export default SkillsContainer
+export default Skills

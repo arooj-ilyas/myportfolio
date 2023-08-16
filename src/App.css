@@ -1,8 +1,7 @@
 /******* Reusable classes *******/
 .purple-color {
-  color: #9c428a
+  color: #9c428a;
 }
-
 
 /******* Custom fonts *******/
 @font-face {
@@ -47,6 +46,23 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.page-container {
+  margin-top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 /******* Navbar CSS *******/
@@ -168,92 +184,53 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 
 /************ About Me Css ************/
-.aboutme {
-  margin-top: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-}
 
-.aboutme h1 {
-  font-size: 65px;
-  font-family: Poppins, sans-serif !important;
+.typing-animation {
+  font-size: 35px;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 110%;
-  letter-spacing: 4px;
+  line-height: 100%;
+  letter-spacing: 2px;
   margin-top: 10px;
   background: linear-gradient(
     91.44deg,
-    #730072 -0.27%,
-    rgba(194, 120, 102, 0.58) 32.69%,
+    #730072 10%,
+    rgba(194, 120, 102, 0.58) 60%,
     #ffd45e 77.87%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   border: 1px;
-  word-break: break-word;
+  word-wrap: break-word;
 }
 
-.aboutme p {
+.description {
   color: #b8b8b8;
-  margin-bottom: 500px;
-  top: 400px;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 150%;
   width: 96%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 40px 0;
 }
 
-.aboutme .description {
-  margin-top: 20px; /* Adjust the margin-top value as needed */
-}
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .aboutme .tagline {
-    font-size: 16px;
-    margin-bottom: 8px; /* Add margin at the bottom of the tagline */
-  }
-
-  .aboutme h1 {
-    font-size: 30px;
-    margin-bottom: 16px; /* Add margin at the bottom of the h1 */
-  }
-
-  .aboutme .profilepicture {
-    margin-top: 16px; /* Add margin at the top of the image */
-  }
-}
-
-@media (max-width: 576px) {
-  .aboutme .tagline {
-    font-size: 14px;
-    margin-bottom: 8px; /* Add margin at the bottom of the tagline */
-  }
-
-  .aboutme h1 {
-    font-size: 25px;
-    margin-bottom: 16px; /* Add margin at the bottom of the h1 */
-    padding-left: 10px;
-  }
-
-  .aboutme .profilepicture {
-    margin-top: 16px; /* Add margin at the top of the image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .heading {
-    width: 100%;
-  }
-}
-
-.aboutme .profilepicture {
+.profilepicture {
+  display: block;
+  margin: 40px auto;
   animation: updown 3s linear infinite;
 }
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 576px) {
+  .aboutme h1 {
+    font-size: 20px;
+  }
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -267,13 +244,6 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-}
-
-.heading-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 /************ Home Page Css ************/
@@ -380,7 +350,7 @@ nav.custom-navbar .navbar-toggler-icon {
 }
 
 .skills-purple-container img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
 }
