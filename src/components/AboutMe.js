@@ -71,10 +71,10 @@ const AboutMe = () => {
           />
         </div>
         <Col xs={12} md={6} xl={12}>
-          <h1 className="typing-animation">{`HI! I AM A... ${text}`}</h1>
+          <h1 className="typing-animation">{`HI! I'M AROOJ, A ${text}`}</h1>
         </Col>
 
-        <p className="description">Image of me!</p>
+        <p className="description">Description of me!</p>
       </Container>
     </section>
   );
