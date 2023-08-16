@@ -320,39 +320,19 @@ nav.custom-navbar .navbar-toggler-icon {
 
 .skills-icons {
   display: block;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   margin: 0 auto;
   padding: 0px 50px;
-}
-
-@media (max-width: 768px) {
-  /* Adjust size for screens smaller than or equal to 768px */
-  .skills-icons {
-    padding: 0px 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  /* Adjust size for screens smaller than or equal to 576px */
-  .skills-icons {
-    padding: 0px 10px;
-  }
 }
 
 .skills-purple-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70%;
   height: auto;
   margin: 50px auto 600px;
-}
-
-.skills-purple-container img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
 }
 
 /************ Projects Page Css ************/

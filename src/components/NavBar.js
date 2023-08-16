@@ -60,19 +60,20 @@ const NavBar = () => {
               about me
             </Nav.Link>
             <Nav.Link
-              href="#skills"
-              className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
-              onClick={() => {updateActivePage(); handleNavCollapse()}}
-            >
-              skills
-            </Nav.Link>
-            <Nav.Link
               href="#projects"
               className={activePage === "project" ? "current navbar-link" : "navbar-link" }
               onClick={() => {updateActivePage(); handleNavCollapse()}}
             >
               projects
             </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={activePage === "skills" ? "current navbar-link" : "navbar-link"}
+              onClick={() => {updateActivePage(); handleNavCollapse()}}
+            >
+              skills
+            </Nav.Link>
+            
             {/* <Nav.Link href="#connect">connect</Nav.Link> */}
           </Nav>
 
